@@ -1,4 +1,12 @@
 <div class="container">
-  <h1 class="title">{{ title }}</h1>
-  <img [src]="logoUrl" alt="BridgeLabz Logo" class="logo" (click)="openBridgeLabzSite()" style="cursor: pointer;">
+  <h1>Hello from BridgeLabz, {{ userName }}!</h1>
+
+  <!-- Clickable Logo in Center -->
+  <img src="assets/logo.jpeg" alt="BridgeLabz Logo" class="logo" (click)="openBridgeLabz()" />
+
+  <!-- Input Field Below Logo -->
+  <input type="text" [(ngModel)]="userName" (input)="validateName()" placeholder="Enter your name" />
+
+  <!-- Error Message Below Input -->
+  <p *ngIf="errorMessage" class="error">{{ errorMessage }}</p>
 </div>
