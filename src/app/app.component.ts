@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Angular-JS';
+  logoPath = 'assets/logo.jpeg';
 }
