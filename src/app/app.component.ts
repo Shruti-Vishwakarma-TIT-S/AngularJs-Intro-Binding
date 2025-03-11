@@ -6,6 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'Hello BridgeLabz';
+  title = 'Hello from BridgeLabz';
   logoUrl = 'assets/logo.jpeg';
+  bridgeLabzUrl = 'https://www.bridgelabz.com';
+
+  openBridgeLabzSite() {
+    window.open(this.bridgeLabzUrl, '_blank');
+  }
 }
